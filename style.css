@@ -1,0 +1,208 @@
+/* agregando color al fondo del div*/
+body{
+    background-color: #FFFFFF;
+}
+div{
+    background-color: #FFFFFF;
+
+/* header "menu de navegacion" agregamos un padding para que el menu quede con un espacio a los lados y no se vea junto*/
+}
+header{
+    background-color:#FFFFFF;
+    padding: 18px;
+}
+/* el contenido lo pusimos al final, separamos los menus con gab*/
+div {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+/* cambiamos color de letra, quitamos la decoracion de las letras, agregamos estilo de letra*/
+div a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial,sans-serif;
+    size: 13px;
+}
+
+/* estilos al icono de puntitos*/
+div a svg { 
+    height: 32px;
+    width: 32px;
+    color: black;
+}
+
+.material-symbols-outlined{
+    color: black;
+}
+
+div a img{
+    width: 32px;
+    height: 32px;
+}
+
+/* seccion del buscador de google imagen*/
+main{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% -60px -65px);
+}
+
+
+figure img{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: center;
+    
+    
+}
+
+
+/* se agrega tamaño, margenes y espacios, se alinean los botones y se agrega que no tenga color de border, tipo de letra*/
+ 
+button{
+    border-radius: 4px;
+    margin: 11px 15px;
+    padding: 5px 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    height: 36px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 15px;
+    
+    
+/* agregando estilos al momento de que pasa el cursor cambie de color los botones*/   
+}
+button:hover {
+    background-color: #007bde;
+    border:1px solid #c5c4cc;
+    border-radius: 4px;
+    color: white;
+    
+}
+main p{
+    font-size: small;
+
+}
+/* ajustar los iconos lupa-micro-camara en la barra de busqueda*/
+.lupa {
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: -20px;
+    
+}
+
+.micro{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-color: #ffffff;
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+}
+
+.camara {
+    width: 25px;
+    height: 25x;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    
+
+/* se ajustó la barra para ingresar texto y con focus se quitó el color del borde cuando pase el cursor*/ 
+}
+input{
+    width:400px;
+    height: 30px;
+    border-radius:15px ;
+    border-left-width: initial;
+    display: inline;
+    border: none;
+    padding: 0 9px;
+}
+
+input:focus{
+    outline: 1px solid white;
+}
+
+/* ajustár y cambiarle color en el borde fuera del buscador*/
+
+.Barra-buscador-fuera{
+    background-color: white;
+    height: 30px;
+    width: 530px;
+    padding: 9px;
+    border-radius: 30px;
+    border-color: white;
+    
+    
+}
+.Barra-buscador-fuera:hover{
+    border-style: solid;
+    color: rgb(201, 201, 201);
+    border:1px solid;
+}
+
+/* ajustar la parte del pie*/
+
+footer{
+    bottom: 0%;
+    position: absolute;
+    background-color: #F8EDED;
+    width: 100%;
+    height: 89px;
+    left: 0;
+    
+}
+
+/* diseño en la seccion donde se encuentra mexico, ajustar tamaño, espacio, tipo de letra*/
+section{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    border-bottom: 1.5px #E2DAD6 solid ;
+    padding: 13px;
+    
+}
+
+/* acomodo de las clases para posicionarlo de izquierda y derecha , ajustarlo, cambiar tipo de letra */
+
+.pie-izquierda{
+    float: left;
+    font-size: 14px;
+    padding: 14px 14px 14px;
+    font-family: Arial, sans-serif;
+    background-color:transparent ;
+    
+   
+}
+
+.pie-derecha{
+   float: right;
+   padding: 14px 14px 14px;
+   font-size: 14px;
+   font-family: Arial, sans-serif;
+   background-color: transparent
+}
+
+div a{
+    background-color: transparent;
+    padding: 0px 8px 0px;
+}
